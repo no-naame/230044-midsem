@@ -1,6 +1,6 @@
 {
   "student_metadata": {
-    "name": "Student Name",
+    "name": "Meghavi",
     "roll_number": "230044",
     "course": "Advanced Machine Learning",
     "exam": "Mid-Semester Examination",
@@ -152,7 +152,7 @@
   "student_declaration": {
     "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A. All interactions listed above represent the full extent of my use of Claude for paper selection, understanding, and submission preparation. I have verified all factual claims independently and take full responsibility for the paper selection and all submitted content.",
     "understanding_acknowledged": true,
-    "signature": "Student Name",
+    "signature": "Meghavi",
     "date": "2026-03-03"
   }
 }
