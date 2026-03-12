@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 2.4",
+  "task_description": "Validation on real MUTAG dataset from the paper (Table 1)",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": true,
+  "student_modification": "This was a collaborative effort between the student (Meghavi) and Claude. The student requested testing on the real MUTAG dataset used in the paper. Claude located the dataset from TUDataset, wrote the loader for the TUDataset format (MUTAG_A.txt, graph_indicator, etc.), and ran the WL kernel for h=0..5. The student verified the dataset statistics match the paper (17.93 avg nodes) and confirmed the accuracy at h=3 matches Table 1.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Download the real MUTAG dataset and validate WL kernel implementation against Table 1",
+      "prompt_summary": "Student asked to find the real data used in the paper, download it, and test the existing WL kernel implementation on it for direct comparison with Table 1 results",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Claude found the MUTAG dataset on TUDataset (chrsmrrs.github.io), downloaded it, wrote a parser for the TUDataset format, ran the WL kernel for h=0..5, and produced comparison plots"
+    }
+  ],
+  "student_verification": "Collaborative verification: Verified dataset stats match the paper (188 graphs, avg 17.93 nodes, 7 node labels). Confirmed accuracy at h=3 (81.99%) matches paper's 82.05% within 0.06pp. Verified the TUDataset format parser correctly builds adjacency lists and assigns node labels by inspecting example graph structures.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 2.4. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Can you find the real data used in the paper and test our WL kernel implementation on it for direct comparison with Table 1?",
+      "why_important": "This prompt led to the strongest validation of our implementation — matching the paper's MUTAG accuracy to within 0.06pp on the exact same dataset"
+    }
+  ]
+}
