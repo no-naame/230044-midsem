@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 3.1",
+  "task_description": "Two-component ablation study \u2014 WL iterations and label prefix",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": true,
+  "student_modification": "This was a collaborative effort between the student (Meghavi) and Claude. The student provided the research plan, design decisions, and paper understanding. Claude assisted with code generation following the student's specifications. The student reviewed, verified, and validated all outputs against the original paper.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Implement two ablation experiments: removing WL iterations (h=0) and removing label prefix from Algorithm 1 Step 2",
+      "prompt_summary": "Asked Claude Code to create task_3_1.ipynb with: (1) ablation of WL iterations by setting h=0, (2) ablation of label prefix by skipping the prepend step, each with explanation of the component's role, expected effect, and comparison bar chart",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Generated the complete ablation notebook including parameter modifications, classification runs, and comparison visualization with analysis of results"
+    }
+  ],
+  "student_verification": "Collaborative verification: Verified ablation 1 (h=0) correctly produces only original label counts by checking feature vector dimensionality equals the number of unique original labels (3). Verified ablation 2 correctly removes the prefix by checking the label_string construction. Confirmed paper references: Definition 4/Eq. 2 for ablation 1, Algorithm 1 Step 2 for ablation 2.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 3.1. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Implement two ablations: (1) remove WL iterations by setting h=0, (2) remove the node's own label prefix from the compression string, with analysis of each component's role and expected accuracy impact",
+      "why_important": "The ablation study is critical for understanding which components of the WL kernel contribute most to its classification performance"
+    }
+  ]
+}

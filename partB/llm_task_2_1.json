@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 2.1",
+  "task_description": "Dataset selection and setup \u2014 synthetic graph classification dataset",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": true,
+  "student_modification": "This was a collaborative effort between the student (Meghavi) and Claude. The student provided the research plan, design decisions, and paper understanding. Claude assisted with code generation following the student's specifications. The student reviewed, verified, and validated all outputs against the original paper.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Generate notebook with synthetic dataset creation for WL kernel evaluation",
+      "prompt_summary": "Asked Claude Code to create task_2_1.ipynb with: 200 graphs (100 per class), Class 0 as random trees, Class 1 as cyclic graphs, node labels from {0,1,2} with class-specific biases, visualization, and dataset statistics",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Generated complete dataset creation pipeline including NetworkX graph generation, label assignment, pickle serialization, statistics computation, and visualization code"
+    }
+  ],
+  "student_verification": "Collaborative verification: Verified that nx.random_tree produces acyclic connected graphs. Verified that Class 1 graphs contain cycles by checking nx.is_tree returns False. Confirmed label distributions match specified probabilities. Ran the notebook and inspected output statistics and visualizations.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 2.1. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Create a synthetic labeled graph classification dataset with 200 graphs: Class 0 as random trees with label bias toward 0, Class 1 as cyclic graphs with label bias toward 1, using NetworkX",
+      "why_important": "Core prompt for dataset generation \u2014 needed to produce a dataset that meaningfully tests the WL kernel's ability to distinguish structural and label patterns"
+    }
+  ]
+}

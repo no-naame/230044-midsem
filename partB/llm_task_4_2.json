@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 4.2",
+  "task_description": "LLM disclosure \u2014 creation of all 10 LLM usage JSON files",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": true,
+  "student_modification": "This was a collaborative effort between the student (Meghavi) and Claude. The student provided the research plan, design decisions, and paper understanding. Claude assisted with code generation following the student's specifications. The student reviewed, verified, and validated all outputs against the original paper.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Create 10 LLM disclosure JSON files (llm_task_1_1.json through llm_task_4_2.json) documenting LLM usage for each task",
+      "prompt_summary": "Asked Claude Code to create all 10 LLM disclosure JSON files following the Part A format with additional fields: task_tag, code_used_verbatim, student_modification, student_verification, and top_5_prompts",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Generated all disclosure files with consistent structure and accurate descriptions of how LLM assistance was used for each task"
+    }
+  ],
+  "student_verification": "Collaborative verification: Reviewed each JSON file for structural validity and content accuracy. Confirmed all required fields are present. Verified that interaction descriptions honestly represent the LLM's role in each task.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 4.2. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Create 10 LLM disclosure JSON files documenting usage for each Part B task, following the Part A format with code_used_verbatim and student_verification fields",
+      "why_important": "Meta-documentation of LLM usage is required for academic integrity \u2014 this file documents the creation of all other disclosure files"
+    }
+  ]
+}

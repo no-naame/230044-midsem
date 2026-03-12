@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 1.3",
+  "task_description": "What the paper claims to improve over \u2014 baseline comparison with Ramon-Gartner kernel",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": false,
+  "student_modification": "This was a collaborative effort. The student provided the conceptual understanding and paper analysis. Claude helped structure and articulate the markdown content. The student verified all claims against the original paper.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Describe the baseline (Ramon-Gartner kernel), its limitation, how WL overcomes it, and a scenario where WL would not outperform",
+      "prompt_summary": "Asked Claude Code to create task_1_3.ipynb analyzing the Ramon-Gartner subtree kernel as baseline, citing Section 3.2.2, Equation 3, Theorem 5, and Table 1 results",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Generated detailed comparison including complexity analysis O(N^2*n^2*h*4^d) vs O(hm), and identified the MUTAG counter-example from Table 1"
+    }
+  ],
+  "student_verification": "Collaborative verification: Verified the Ramon-Gartner kernel definition against Equation 3 in the paper. Confirmed the complexity claim from Section 3.2.2. Verified Table 1 numbers: Ramon-Gartner 85.72% vs WL 82.05% on MUTAG. Confirmed the scenario analysis is logically sound.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 1.3. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Analyze the baseline method (Ramon-Gartner subtree kernel), its computational limitation, how the WL kernel overcomes it, and identify a scenario where WL would NOT outperform, citing specific paper sections and Table 1",
+      "why_important": "Required careful analysis of both methods' trade-offs and finding empirical evidence from the paper for the counter-scenario"
+    }
+  ]
+}

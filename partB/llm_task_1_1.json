@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 1.1",
+  "task_description": "Core contribution of the WL Graph Kernels paper \u2014 step-by-step method description",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": false,
+  "student_modification": "This was a collaborative effort. The student provided the conceptual understanding and paper analysis. Claude helped structure and articulate the markdown content. The student verified all claims against the original paper.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Generate markdown-only notebook describing the WL subtree kernel algorithm step by step",
+      "prompt_summary": "Provided the full plan for Task 1.1 and asked Claude Code to create the notebook with step-by-step method description following Algorithm 1, Definition 4, and Equation 2 of the paper",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Claude Code generated the complete markdown content describing all 8 steps of the WL subtree kernel pipeline with paper references"
+    }
+  ],
+  "student_verification": "Collaborative verification: Verified each step against Algorithm 1 and Definition 4 in the original paper (Shervashidze et al., JMLR 2011). Confirmed equation references match the paper's numbering. Verified the runtime claim O(hm) matches Theorem 5.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 1.1. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Create task_1_1.ipynb describing the core contribution of the WL Graph Kernels paper with step-by-step method description referencing Algorithm 1, Definition 4, and Equation 2",
+      "why_important": "This was the primary prompt that generated the entire task content \u2014 the 8-step description of the WL subtree kernel method"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 2.2",
+  "task_description": "WL subtree kernel implementation and SVM classification",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": true,
+  "student_modification": "This was a collaborative effort between the student (Meghavi) and Claude. The student provided the research plan, design decisions, and paper understanding. Claude assisted with code generation following the student's specifications. The student reviewed, verified, and validated all outputs against the original paper.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Implement the WL subtree kernel (Algorithm 1, Definition 4) and SVM classification pipeline",
+      "prompt_summary": "Asked Claude Code to implement: wl_subtree_features() following Algorithm 1 with dictionary-based hash compression, compute_kernel_matrix() as dot product, classify_with_svm() with nested CV and C selection from {10^-3,...,10^3}",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Generated the complete WL kernel implementation including the relabeling loop, feature vector construction, kernel matrix computation, and SVM classification with nested cross-validation"
+    }
+  ],
+  "student_verification": "Collaborative verification: Traced through the wl_subtree_features function step by step against Algorithm 1 in the paper. Verified: (1) neighbor label collection matches Step 1, (2) sorting and prefix prepending matches Step 2, (3) dictionary lookup implements the hash in Algorithm 2, (4) feature counting across iterations matches Definition 4. Verified SVM setup uses kernel='precomputed' and stratified CV.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 2.2. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Implement the WL subtree kernel following Algorithm 1 and Definition 4, with dictionary-based label compression, dot-product kernel matrix, and SVM classification with nested 10-fold CV",
+      "why_important": "This is the core implementation prompt \u2014 the entire reproduction depends on correctly implementing the WL relabeling algorithm and kernel computation"
+    }
+  ]
+}

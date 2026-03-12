@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 3.2",
+  "task_description": "Failure mode \u2014 regular graphs with uniform labels defeat the WL kernel",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": true,
+  "student_modification": "This was a collaborative effort between the student (Meghavi) and Claude. The student provided the research plan, design decisions, and paper understanding. Claude assisted with code generation following the student's specifications. The student reviewed, verified, and validated all outputs against the original paper.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Demonstrate WL kernel failure on regular graphs with uniform labels, connecting to Assumption 3 from Task 1.2",
+      "prompt_summary": "Asked Claude Code to create task_3_2.ipynb constructing 3-regular graphs with uniform label 0, running the WL kernel, showing identical feature vectors, kernel matrix heatmap, and connection to the 1-dim WL test limitation",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Generated the failure mode demonstration including regular graph generation, WL kernel evaluation showing near-random accuracy, kernel matrix heatmap comparison, and analysis connecting to Cai et al. (1992)"
+    }
+  ],
+  "student_verification": "Collaborative verification: Verified that nx.random_regular_graph produces valid 3-regular graphs by checking degree sequences. Confirmed the theoretical argument: in 3-regular graphs with uniform labels, all nodes collect the same multiset {0, 0, 0} of neighbor labels, producing identical compressed labels. Verified the reference to Cai et al. (1992) matches the paper's citation.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 3.2. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Demonstrate the WL kernel's failure on 3-regular graphs with uniform labels, show the kernel matrix has no class discrimination, and connect this to the 1-dim WL test expressivity limitation from Task 1.2",
+      "why_important": "This demonstrates a fundamental theoretical limitation of the WL kernel, connecting the practical failure to the paper's own acknowledged limitation via Cai et al. (1992)"
+    }
+  ]
+}

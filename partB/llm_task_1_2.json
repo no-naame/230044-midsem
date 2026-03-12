@@ -1,0 +1,41 @@
+{
+  "task_tag": "Task 1.2",
+  "task_description": "Key assumptions of the WL Graph Kernels paper",
+  "student_metadata": {
+    "name": "Meghavi",
+    "roll_number": "230044",
+    "part": "Part B"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Claude Code",
+      "model": "claude-opus-4-6",
+      "provider": "Anthropic",
+      "interface": "Claude Code CLI (collaborative session)"
+    }
+  ],
+  "code_used_verbatim": false,
+  "student_modification": "This was a collaborative effort. The student provided the conceptual understanding and paper analysis. Claude helped structure and articulate the markdown content. The student verified all claims against the original paper.",
+  "interactions": [
+    {
+      "interaction_id": 1,
+      "purpose": "Generate notebook identifying three key assumptions of the WL kernel with violation scenarios",
+      "prompt_summary": "Asked Claude Code to create task_1_2.ipynb with three assumptions: discrete node labels, injective compression, and 1-dim WL expressivity limitation, each with paper references and violation examples",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Collaborative effort: Generated structured markdown describing each assumption with paper section references and concrete violation scenarios"
+    }
+  ],
+  "student_verification": "Collaborative verification: Verified Assumption 1 against Section 1's graph definition. Verified Assumption 2 against Section 2's discussion of injectivity. Verified Assumption 3 against the paper's reference to Cai et al. (1992). Confirmed violation scenarios are logically consistent.",
+  "declaration": {
+    "statement": "I declare this is a complete and honest record of LLM usage for Task 1.2. This work was a collaborative effort between the student (Meghavi, 230044) and Claude (claude-opus-4-6). The student provided the research direction, paper understanding, and design decisions. Claude assisted with implementation, structuring, and articulation.",
+    "signature": "Meghavi",
+    "date": "2026-03-12"
+  },
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Identify three key assumptions of the WL subtree kernel paper with specific paper references and violation scenarios",
+      "why_important": "Core prompt for identifying the fundamental assumptions that underpin the WL kernel's correctness and applicability"
+    }
+  ]
+}
